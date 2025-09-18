@@ -1,0 +1,20 @@
+amazon-recsys/
+│
+├── data/                  # (ignored) raw & processed datasets
+│   └── .gitkeep
+│
+├── scripts/               # helper scripts
+│   ├── peek_csv.py
+│   └── preprocess_amazon.py
+│
+├── src/
+│   ├── data/
+│   │   └── dataset_implicit.py     # Dataset loaders
+│   ├── models/
+│   │   └── bpr_mf.py               # BPR-MF model
+│   └── training/
+│       ├── train_bpr.py            # Training loop
+│       └── metrics.py              # Evaluation metrics
+│
+├── requirements.txt
+└── README.md
